@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký facebook</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #919fa7dc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        input[type="text"]{
+            width: calc(50% - 5px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="email"], input[type="password"]{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 50%;
+            height: 40px;
+            padding: 10px;
+            background-color: #2a8532;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        input[type="submit"]:hover {
+            background-color: #2a8532;
+        }
+        label, select, a {
+            display: inline-block;
+            vertical-align: top;
+            margin-bottom: 10px;
+        }
+        select {
+            padding: 5px;
+            padding-right: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+        #p {
+            font-size: 10px;
+            line-height: 5px; 
+            text-align: justify;
+            padding-right: 103px;
+            display: inline-block;
+        }
+        select, #p {
+            vertical-align: top;
+        }
+        #date {
+            display: flex;
+            align-items: baseline;
+        }
+
+        .select-wrapper {
+           display: inline-flex;
+           align-items: center;
+        }
+
+        .label-wrapper {
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Đăng ký</h1>
+        <p>Luôn miễn phí</p>
+        <form action="">
+            <input type="text" placeholder="Họ" required>
+            <input type="text" placeholder="Tên" required>
+            <input type="email" placeholder="Số di động hoặc email" required>
+            <input type="password" placeholder="Mật khẩu mới" required>
+            
+                <p>Ngày sinh</p>
+                <div id="date">
+                <div class="select-wrapper">
+                    <select>
+                        <option>15</option>
+                    </select>
+                    <select>
+                        <option>Tháng 4</option>
+                    </select>
+                    <select> 
+                        <option>1993</option>
+                    </select>
+                </div>
+                <div class="label-wrapper">
+                    <small id="a"><a href="#">Tại sao tôi cần cung cấp ngày sinh của mình?</a></small>
+                </div>
+            </div>
+            
+            <input type="radio" name="gender" id="nu">Nữ
+            <input type="radio" name="gender" id="nam">Nam
+            
+            <p id="p">Bằng cách nhấp vào Tạo tài khoản, bạn đồng ý với <a href="#">Điều khoản</a> của chúng tôi,
+            bao gồm <a href="#">Sử dụng cookie</a>. Bạn có thể nhận được thông báo qua SMS từ Facebook và 
+            có thể bỏ chọn bất kỳ lúc nào.</p>
+            <input type="submit" value="Tạo tài khoản">
+        </form>
+    </div>
+</body>
+</html>

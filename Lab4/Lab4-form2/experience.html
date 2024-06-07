@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu{
+            width: 50%;
+            height: 550px;
+            margin: 100 auto;
+            padding: 20px;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgb(122, 117, 117);
+        }
+        #cty,
+        #chucdanh{
+            width: 300px;
+            height: 25px;
+        }
+        #salary{
+            height: 25px;
+            width: 225px;
+        }
+        .tgian{
+            height: 25px;
+            width: 65px;
+        }
+        #luu{
+            border: none;
+            height: 35px;
+            width: 75px;
+            margin-right: 5px;
+        }
+        #ko{
+            border: none;
+            height: 35px;
+            width: 90px;
+        }
+        .a{
+            margin-right: 140px;
+        }
+    </style>
+</head>
+<body class="menu">
+    <form>
+        <div style="display: flex;align-items: center;">
+            <label style="background-color: rgb(240, 99, 34);color:rgb(240, 99, 34);height:30px;width: 6px;">| </label><label style="color: rgb(107, 107, 189);font-size: 25px;"> Kinh nghiệm làm việc</label><label style="color: rgb(107, 107, 189);font-size: 20px;"> <i>(bắt buộc)</i></label>
+            <hr style="border-top: 1px solid rgb(211, 205, 205);width: 30px;flex-grow: 1;height: 0.5px; margin: 0 10px;">
+        </div>
+            <details open>
+                <summary>Rút gọn</summary>
+        <div>
+            <p>Hãy liệt kê những công việc,nhiệm vụ mà bạn đã từng đảm nhận và thực hiện. Chú ý liệt kê kinh nghiệm làm việc từ thời gian gần đây nhất trở về nước.</p>
+            <hr style="color: rgb(211, 205, 205);">
+        </div>
+        <div style="text-align: right;margin-right: 130px;" class="form">
+            <label>Công ty</label><label style="color: red;">*</label>&nbsp;&nbsp;&nbsp;<input type="text" id="cty" name="cty"><br><br>
+            <label>Chức danh </label><label style="color: red;">*</label>&nbsp;&nbsp;&nbsp;<input type="text" id="chucdanh" name="chucdanh"><br><br>
+            <label>Thời gian làm việc</label><label style="color: red;">*</label>&nbsp;&nbsp;&nbsp; <label style="font-size: 12px;">từ</label>
+            <select class="tgian">
+                <option>Tháng</option>
+            </select>
+            <select class="tgian">
+                <option>Năm</option>
+            </select>
+            <label style="font-size: 12px;">đến</label>
+            <select class="tgian">
+                <option>Tháng</option>
+            </select>
+            <select class="tgian">
+                <option>Năm</option>
+            </select><br><br>
+            <label>Mức lương</label>&nbsp;&nbsp;&nbsp;
+            <select class="tgian">
+                <option>VNĐ</option>
+                <option>$</option>
+            </select>&nbsp;&nbsp;
+            <input type="text" id="salary" name="salary"><br><br>
+            <label style="vertical-align: top;">Mô tả công việc</label><label style="color: red;vertical-align: top;">*</label>&nbsp;&nbsp;&nbsp;&nbsp; <textarea id="mota" cols="40" rows="5"></textarea><br><br>
+            <label style="vertical-align: top;">Thành tích đạt được</label>&nbsp;&nbsp;&nbsp;<textarea id="thanhtich" cols="40" rows="5"></textarea><br>
+            <div class="a">
+                <button id="luu" name="luu" style="background-color: red;font-size: 16px;color: white;">Lưu</button>
+            <button id="ko" name="ko" style="background-color: rgb(161, 154, 154);font-size: 16px;color: white;">Không lưu</button>
+        
+            </div>
+            </div>
+        
+    </details>
+    </form>
+</body>
+</html>

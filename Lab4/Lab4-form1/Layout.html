@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .margin{
+            background-color: rgb(220, 215, 215);
+            width: 20vw;
+            height:20vh;
+        }
+        .content{
+            background-color: rgb(229, 119, 119);
+            width: 40vw;
+            height: 35vh;
+        }
+        table,td{
+            border-collapse: collapse;
+
+        }
+        .entry{
+            width: 50vw;
+            background-color: rgb(51, 201, 239);
+        }
+    </style>
+    <table>
+        <tr>
+            <td colspan="3" class="margin" style="height: 3vh;">
+                PAGE
+            </td>
+        </tr>
+        <tr>
+            <td class="margin" style="width: 1vw;"></td>
+            <td>
+                <table>
+                    <tr>
+                        <td style="background-color: rgb(189, 247, 189); height: 10vh;">
+                            HEADER
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table style="border-spacing: 10px;">
+                                <tr>
+                                <td class="content"colspan="5" style="height:3vh;">
+                                    CONTENT
+                                </td>
+                                </tr>
+                            
+                               <tr>
+
+                                <td class="content" style="width: 1vh;" rowspan="7"></td>
+                               
+                                <td class="entry" style="width: 20vw;">
+                                    ENTRY
+                                </td>
+                                <td class="content" rowspan="5" style="width: 1vw;"></td>
+                                <td rowspan="5" style="width: 10vw; background-color: rgb(54, 185, 225);">SIDEBAR</td>
+                               
+                                <td rowspan="7" class="content" style="width: 1vh;"></td>
+                               </tr>
+                               <tr>
+                                <td class="content" style="height: 1vh;" colspan="2"></td>
+                               </tr>
+                               <tr>                             
+                                <td style="width: 40vw;" class="entry">ENTRY</td>
+                               </tr>
+                               <tr>
+                                <td class="content" style="height: 1vh;" colspan="2"></td>
+                               </tr>
+                               <tr>                               
+                                <td class="entry">ENTRY</td>
+                               </tr>
+                               <tr>
+                                <td class="content" style="height: 1vw;" rowspan="7"></td>
+                               </tr>
+                               <tr>
+                                <td class="content" style="height: 3vh;" colspan="5"></td>
+                               </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgb(94, 245, 139); height: 10vh;">
+                            FOOTER
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td class="margin" style="width: 1vw;"></td>
+        </tr>
+        <tr>
+            <td colspan="3" class="margin" style="height: 3vh;"></td>
+        </tr>
+    </table>
+</body>
+</html>

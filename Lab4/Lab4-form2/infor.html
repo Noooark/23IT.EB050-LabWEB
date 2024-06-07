@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgb(122, 117, 117);
+            width: 50%;
+            margin: 50px auto;
+        }
+        #avatar {
+            background-color: rgb(83, 81, 81);
+            font-size: 16px;
+            color: white;
+            width: 150px;
+            height: 35px;
+            text-align: center;
+            margin-top: 8px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        #su{
+            position:absolute;
+            top: 80px;
+            right:400px;
+        }
+        hr{
+            border-top: 1px solid rgb(179, 172, 172);
+            width: 10px;
+            flex-grow: 0.95;
+            height: 0.5px; 
+            margin: 0 10px;
+        }
+        .menu{
+            width: 50%;
+            height: 420px;
+            margin: 100 auto;
+            padding: 20px;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgb(122, 117, 117);
+        }
+            
+        #name,#sdt,#vitri{
+            width: 300px;
+            height: 25px;
+        }
+        .date,.month,.year{
+            width: 70px;
+            height: 28px;
+        }
+        .gioitinh,.tinhtrang,.noio{
+            width: 310px;
+            height: 25px;
+        }
+       #đn{
+        width: 75px;
+        height: 38px;
+        text-align: center;
+        border: none;
+        margin-right: 230px;
+        border-radius: 3px;
+       }
+       .ngsinh{
+        margin-right: 88px;
+       }
+       .anh{
+        background-color: rgb(189, 182, 182);
+        vertical-align: middle;
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        font-size: 24px;
+       }
+       .top-bar {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+       .top-bar hr {
+            flex-grow: 1;
+            border: none;
+            border-top: 1px solid rgb(179, 172, 172);
+            margin: 0 10px 0 10px;
+            position: relative;
+        }
+       .ava{
+        text-align: center;
+        float: left;
+        margin-left: 10px;
+        vertical-align: middle;
+        margin-top: 10px;
+       }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="top-bar" style="display: flex;align-items: center;">
+            <label style="background-color: red; color: red;height:30px;width: 6px;">| </label>
+            <label style="color: rgb(125, 163, 246);">
+                <h2>Thông tin tài khoản</h2>
+            </label>
+            <label style="color: rgb(125, 163, 246);"> 
+                <i><h4>(bắt buộc)</h4></i>
+            </label>
+            <hr>
+        </div> 
+        
+        <details open>
+            <summary id="su">Rút gọn</summary>
+            <div class="ava">
+                <div class="anh">
+                    <label>
+                        Chưa cập nhật<br>Hình ảnh
+                    </label>
+                </div>
+                    <button id="avatar" name="avatar">Chọn avatar</button>
+            </div>
+           <div style="text-align: right;margin-right: 30px;">
+            <label>Họ tên</label>
+            <label style="color: red;">*</label>&nbsp;&nbsp;&nbsp;
+            <input type="text" id="name" name="name"  placeholder="Nhập họ và tên"><br><br>
+            <label>Số điện thoại</label>
+            <label style="color: red;">*</label>&nbsp;&nbsp;&nbsp;
+            <input type="text" id="sdt" name="sdt" required="true" placeholder="Nhập số điện thoại"><br><br>
+            <div class="ngsinh">
+                <label>Ngày sinh</label>
+                <label style="color: red;">*</label>&nbsp;&nbsp;&nbsp;
+            <select class="date">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select>
+            <select class="month">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select>
+            <select class="year">
+                <option>1984</option>
+                <option>1985</option>
+            </select><br><br>
+            </div>
+                
+            <label>Giới tính</label><label style="color: red;">*</label>&nbsp;&nbsp;&nbsp;
+            <select class="gioitinh">
+                <option>Nam</option>
+                <option>Nữ</option>
+            </select><br><br>
+            <label>Hôn nhân </label><label style="color: red;">*</label>&nbsp;&nbsp;&nbsp;
+            <select class="tinhtrang" >
+                <option>Chọn tình trạng hôn nhân</option>
+                <option>Độc thân</option>
+                <option>Đã kết hôn</option>
+            </select><br><br>
+            <label>Tỉnh/Thành phố</label><label style="color: red;">*</label>&nbsp;&nbsp;&nbsp;
+            <select class="noio">
+                <option>Đà Nẵng</option>
+                <option>Hà Nội</option>
+                <option>TP Hồ Chí Minh</option>
+                <option>Quảng Nam</option>
+                <option>Quảng Bình</option>
+            </select><br><br>
+            <label>Chỗ ở hiện tại</label><label style="color: red;">*</label>&nbsp;&nbsp;&nbsp;
+            <input type="text" id="vitri" name="vitri" placeholder="Nhập chỗ ở hiện tại"><br><br>
+            <button id="đn" name="đn" style="background-color: red;font-size: 20px;color: white;">Lưu</button>
+           </div>      
+        </details>
+        </form>
+</body>
+</html>

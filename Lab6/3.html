@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(204, 204, 230);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input[type="radio"] {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        label {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            vertical-align: top;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <form action="">
+            <p style="background-color: rgb(188, 197, 198);width: 100%; height: 30px; text-align: justify;"><b>Phần 1.</b> Chọn câu hỏi mà bạn đã từng hành động hoặc nghĩ mình sẽ hoạt động</p>
+            <ol>
+                <b><li>Khi bạn đi đến một nơi nào đó trong ngày bạn sẽ</li></b>
+                <input type="radio" name="opt1" id="opt1_1"> 
+                <label for="opt1_1">lên danh sách các công việc và thời gian thực hiện các công việc khi bạn đến đó</label>
+                <br>
+                <input type="radio" name="opt1" id="opt1_2"> 
+                <label for="opt1_2">nghĩ đến công việc sẽ làm rồi đi thôi</label>
+                <hr>
+                <b><li>Nếu bạn là một giáo viên, bạn muốn dạy</li></b>
+                <input type="radio" name="opt2" id="opt2_1"> 
+                <label for="opt2_1">các khóa học thực nghiệm (thực tế)</label>
+                <br>
+                <input type="radio" name="opt2" id="opt2_2"> 
+                <label for="opt2_2">các khóa học liên quan đến lý thuyết</label>
+                <hr>
+                <b><li>Thường thì bạn có phải là một người</li></b>
+                <input type="radio" name="opt3" id="opt3_1"> 
+                <label for="opt3_1">chủ động giao lưu/giao tiếp</label>
+                <br>
+                <input type="radio" name="opt3" id="opt3_2"> 
+                <label for="opt3_2">trầm tính và dè dặt</label>
+            </ol>
+        </form>
+        <form action="">
+            <p style="background-color: rgb(188, 197, 198);width: 100%; height: 30px; text-align: justify;"><b>Phần 2.</b> Chọn từ hoặc nhóm các từ nào đúng (gần đúng) với các nghĩ hay hành động của bạn</p>
+            <table>
+                <tr>
+                    <td>
+                        <ol>
+                            <b><li value="27"></li></b>
+                            <input type="radio" name="opt4" id="opt4_1">
+                            <label for="opt4_1">Lên kế hoạch</label>
+                            <br>
+                            <input type="radio" name="opt4" id="opt4_2">
+                            <label for="opt4_2">Không lên kế hoạch</label>
+                        </ol>
+                    </td>
+                    <td>
+                        <ol>
+                            <b><li value="28"></li></b>
+                            <input type="radio" name="opt5" id="opt5_1">
+                            <label for="opt5_1">Các sự kiện</label>
+                            <br>
+                            <input type="radio" name="opt5" id="opt5_2">
+                            <label for="opt5_2">Các ý tưởng</label>
+                        </ol>
+                    </td>
+                    <td>
+                        <ol>
+                            <b><li value="29"></li></b>
+                            <input type="radio" name="opt6" id="opt6_1">
+                            <label for="opt6_1">Trầm tĩnh</label>
+                            <br>
+                            <input type="radio" name="opt6" id="opt6_2">
+                            <label for="opt6_2">Nồng nhiệt</label>
+                        </ol>
+                    </td>
+                    <td>
+                        <ol>
+                            <b><li value="30"></li></b>
+                            <input type="radio" name="opt7" id="opt7_1">
+                            <label for="opt7_1">Có sức thuyết phục</label>
+                            <br>
+                            <input type="radio" name="opt7" id="opt7_2">
+                            <label for="opt7_2">Làm cảm động</label>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><hr></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol>
+                            <b><li value="31"></li></b>
+                            <input type="radio" name="opt8" id="opt8_1">
+                            <label for="opt8_1">Tưởng tượng</label>
+                            <br>
+                            <input type="radio" name="opt4" id="opt8_2">
+                            <label for="opt8_2">Thực tế</label>
+                        </ol>
+                    </td>
+                    <td>
+                        <ol>
+                            <b><li value="32"></li></b>
+                            <input type="radio" name="opt9" id="opt9_1">
+                            <label for="opt9_1">Lợi ích</label>
+                            <br>
+                            <input type="radio" name="opt5" id="opt9_2">
+                            <label for="opt9_2">Phước lành (phù hộ)</label>
+                        </ol>
+                    </td>
+                    <td>
+                        <ol>
+                            <b><li value="33"></li></b>
+                            <input type="radio" name="opt10" id="opt10_1">
+                            <label for="opt10_1">Người cư xử hòa giải</label>
+                            <br>
+                            <input type="radio" name="opt10" id="opt10_2">
+                            <label for="opt10_2">Người phán xét/chỉ trích</label>
+                        </ol>
+                    </td>
+                    <td>
+                        <ol>
+                            <b><li value="34"></li></b>
+                            <input type="radio" name="opt11" id="opt11_1">
+                            <label for="opt11_1">Có hệ thống</label>
+                            <br>
+                            <input type="radio" name="opt11" id="opt11_2">
+                            <label for="opt11_2">Tự ý/Linh hoạt</label>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><hr></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol>
+                            <b><li value="35"></li></b>
+                            <input type="radio" name="opt12" id="opt12_1">
+                            <label for="opt12_1">Tuyên bố</label>
+                            <br>
+                            <input type="radio" name="opt12" id="opt12_2">
+                            <label for="opt12_2">Quan niệm</label>
+                        </ol>
+                    </td>
+                    <td>
+                        <ol>
+                            <b><li value="36"></li></b>
+                            <input type="radio" name="opt13" id="opt13_1">
+                            <label for="opt13_1">Kín đáo</label>
+                            <br>
+                            <input type="radio" name="opt13" id="opt13_2">
+                            <label for="opt13_2">Thích nói</label>
+                        </ol>
+                    </td>
+                    <td>
+                        <ol>
+                            <b><li value="37"></li></b>
+                            <input type="radio" name="opt14" id="opt14_1">
+                            <label for="opt14_1">Phân tích</label>
+                            <br>
+                            <input type="radio" name="opt14" id="opt14_2">
+                            <label for="opt14_2">Đồng cảm</label>
+                        </ol>
+                    </td>
+                    <td>
+                        <ol>
+                            <b><li value="38"></li></b>
+                            <input type="radio" name="opt15" id="opt15_1">
+                            <label for="opt15_1">Sáng tạo cái mới</label>
+                            <br>
+                            <input type="radio" name="opt15" id="opt15_2">
+                            <label for="opt15_2">Làm dựa trên cái có sẵn</label>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><hr></td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <input type="radio" name="opt16" id="opt16_1">
+                        <label for="opt16_1">bạn cảm thấy lạnh nhạt về nó</label>
+                        <br>
+                        <input type="radio" name="opt16" id="opt16_2">
+                        <label for="opt16_2">bạn rất chán nản với nó</label> 
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        table {
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            border-radius: 3px;
+            border-spacing: 10px;
+        }
+        #inp{
+            width: 400px; 
+            height: 20px;
+            padding: 10px;
+            margin-bottom: 20px; 
+        }
+        #btn{
+            width: 420px; 
+            height: 40px;
+            padding: 10px;
+            margin-bottom: 20px; 
+            color: white;
+            border-radius: 3px;
+            text-align: center;
+            border: none;
+        }
+        select {
+            width: 430px;
+            height: 40px; 
+            padding: 10px; 
+            margin-bottom: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Đăng ký</td>
+        </tr>
+        <tr>
+            <td>
+                <input id="inp" type="text" placeholder="Tên truy cập">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="inp" type="password" placeholder="Mật khẩu">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="inp" type="password" placeholder="Nhập lại mật khẩu">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div><input type="text" placeholder="Email" id="inp"></div>
+                <div><label style="float: left;">Bạn sẽ sử dụng email này trong trường hợp cần lấy lại mật khẩu</label></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <select name="country">
+                   <option>Viet Nam (Việt Nam)</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox"> Tôi đồng ý với
+                <a href="a" style="text-decoration: none;">Điều khoản dịch vụ</a> và <a href="b" style="text-decoration: none;">Chính sách bảo mật</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="btn" type="button" value="Đăng ký ngay" style="background-color: red;">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

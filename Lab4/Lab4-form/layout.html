@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .middle, .left, .right, .header, .footer {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .container {
+            width: 800px;
+            height: 400px;
+            display: flex;
+        }
+        .header {
+            color: aliceblue;
+            background-color: rgb(1, 82, 1);
+            height: 100px;
+            width: 800px;
+        }
+        .footer {
+            color: #ffffff;
+            background-color: rgb(1, 82, 1);
+            width: 800px;
+            height: 50px;
+        }
+        .middle {
+            background-color: white;
+            width: 500px;
+            height: 400px;
+        }
+        .right {
+            background-color: #81d781;
+            width: 150px;
+            height: 400px;
+        }
+        .left{
+            background-color: #81d781;
+            width: 150px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <p><b>Khối trên</b> (rộng 800px, cao 100px)</p>
+    </div>
+    <div class="container">
+        <div class="left">
+            <p><b>Khối trái</b> (rộng 150px, cao 400px)</p>
+        </div>
+        <div class="middle">
+            <p><b>Khối giữa</b> (rộng 500px, cao 400px)</p>
+        </div>
+        <div class="right">
+            <p><b>Khối phải</b> (rộng 150 px, cao 400px)</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p><b>Khối dưới</b> (rộng 800px, cao 50px)</p>
+    </div>
+</body>
+</html>

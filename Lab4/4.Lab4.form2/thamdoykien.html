@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phiếu thăm dò ý kiến</title>
+    <style>
+        .checkbox-column {
+            text-align: left; /* Canh trái cho text và checkbox */
+            padding-left: 50%; /* Đẩy nội dung vào giữa */
+        }
+       
+        th {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="2">Phiếu thăm dò ý kiến</th>
+        </tr>
+        <tr>
+            <td>Tên đăng nhập
+                <input type="text">
+            </td>
+            <td>
+                Giới tính
+                <input type="radio" name="sex" checked>Nam
+                <input type="radio" name="sex">Nữ
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">Những mục bạn thường quan tâm trên Internet</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="checkbox-column">
+                <input type="checkbox" name="interest" id="news">Tin tức
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="checkbox-column">
+                <input type="checkbox" name="interest" id="entertainment">Giải trí
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="checkbox-column">
+                <input type="checkbox" name="interest" id="study">Góc học tập
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="checkbox-column">
+                <input type="checkbox" name="interest" id="others">Các mục khác
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

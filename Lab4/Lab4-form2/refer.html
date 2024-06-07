@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu{
+            width: 50%;
+            height: 500px;
+            margin: 100 auto;
+            padding: 20px;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgb(122, 117, 117);
+        }
+        #name,
+        #chucdanh,
+        #cty,
+        #email,
+        #sdt{
+            height: 30px;
+            width: 350px;
+            
+        }
+        #luu{
+            border: none;
+            height: 35px;
+            width: 75px;
+            margin-right: 8px;
+            border-radius: 3px;
+        }
+        #ko{
+            border: none;
+            height: 35px;
+            width: 100px;
+            border-radius: 3px;
+        }
+        .a{
+            margin-left: 195px;
+        }
+        #xem{
+            border: none;
+            height: 35px;
+            width: 180px;
+            margin-right: 15px;
+            border: 1px solid rgb(206, 205, 205);
+            border-radius: 3px;
+        }
+        #luuhs{
+            border: none;
+            height: 35px;
+            width: 180px;
+            border-radius: 3px;
+        }
+        .b{
+            margin-left: 140px;
+        }
+    </style>
+</head>
+<body class="menu">
+    <form>
+        <div style="display: flex;align-items: center;">
+            <label style="background-color: rgb(240, 99, 34);color:rgb(240, 99, 34);height:30px;width: 6px;">| </label><label style="color: rgb(107, 107, 189);font-size: 25px;"> Tham khảo</label><label style="color: rgb(107, 107, 189);font-size: 20px;"> <i>(không bắt buộc)</i></label>
+            <hr style="border-top: 1px solid rgb(179, 172, 172);width: 10px;flex-grow: 1;height: 0.5px; margin: 0 10px;">
+        </div>
+        <details open>
+            <summary>Rút gọn</summary>
+            <div style="margin-right: 100px;text-align: right;">
+                <label>Người tham khảo</label><label style="color: red;">*</label>&nbsp;&nbsp;&nbsp;<input type="text" id="name" name="name" required="true" ><br><br>
+                <label>Chức danh</label><label style="color: red;">*</label>&nbsp;&nbsp;&nbsp;<input type="text" id="chucdanh" name="chucdanh" required="true" ><br><br>
+                <label>Tên công ty</label><label style="color: red;">*</label>&nbsp;&nbsp;&nbsp;<input type="text" id="cty" name="cty" required="true" ><br><br>
+                <label>Email</label><label style="color: red;">*</label>&nbsp;&nbsp;&nbsp;<input type="text" id="email" name="email" required="true" ><br><br>
+                <label>Số điện thoại</label><label style="color: red;">*</label>&nbsp;&nbsp;&nbsp;<input type="text" id="sdt" name="sdt" required="true" ><br><br>
+            </div>
+            <div class="a">
+                <button id="luu" name="luu" style="background-color: red;font-size: 16px;color: white;">Lưu</button>
+            <button id="ko" name="ko" style="background-color: rgb(161, 154, 154);font-size: 16px;color: white;">Không lưu</button>
+            </div><br>
+            <div>
+                <input type="radio">
+                <label>Cho phép Nhà tuyển dụng tìm kiếm thông tin của bạn và chủ động liên hệ mới phỏng vấn </label><br>
+                <input type="radio">
+                <label>Không cho phép nhà tuyển dụng tìm kiếm. Hồ sơ này chỉ dùng để ứng tuyển</label>
+            </div><br><br>
+            <div class="b">
+                <button id="xem" name="xem" style="background-color: white;font-size: 16px;color: red;">Xem trước</button>
+                <button id="luuhs" name="luuhs" style="background-color: red;font-size: 16px;color: white;">Lưu hồ sơ</button>
+            </div>
+        </details>
+    </form>
+</body>
+</html>

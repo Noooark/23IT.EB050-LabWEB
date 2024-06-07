@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu{
+            width: 50%;
+            height: 650px;
+            margin: 100 auto;
+            padding: 20px;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgb(122, 117, 117);
+        }
+        
+        .a1{
+            height: 25px;
+            width: 300px;
+            margin-right: 100px;
+        }
+        #phanmem{
+            height: 25px;
+            width: 305px;
+        }
+        .pm{
+            margin-left: 130px;
+        }
+        #thanhtich{
+            margin-right: 30px;
+        }
+        #a{
+            margin-right: 10px;
+        }
+        .table1{
+            width: 400px;
+            height: 100px;
+        }
+        .table2{
+            width: 450px;
+            height: 100px;
+            
+        }
+        .button,
+        .button1{
+            margin-left: 185px;
+        }
+        #luu,
+        #luu1{
+            border: none;
+            height: 35px;
+            width: 75px;
+            margin-right: 8px;
+            border-radius: 3px;
+        }
+        #ko,
+        #ko1{
+            border: none;
+            height: 35px;
+            width: 100px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body class="menu">
+    <form>
+        <div style="display: flex;align-items: center;">
+            <label style="background-color: rgb(240, 99, 34);color:rgb(240, 99, 34);height:30px;width: 6px;">| </label><label style="color: rgb(107, 107, 189);font-size: 25px;"> Ngoại ngữ & Tin học</label><label style="color: rgb(107, 107, 189);font-size: 20px;"> <i>(không bắt buộc)</i></label>
+            <hr style="border-top: 1px solid rgb(179, 172, 172);width: 10px;flex-grow: 1;height: 0.5px; margin: 0 10px;">
+        </div>  
+        <details open>
+            <summary>Rút gọn</summary>
+            <div style="text-align: center;" class="p1">
+                <label id="a">Ngoại ngữ</label>
+                <select class="a1">
+                    <option>Chọn ngoại ngữ</option>
+                    <option>Anh</option>
+                    <option>Việt</option>
+                    <option>Trung</option>
+                    <option>Hàn</option>
+                </select><br><br>
+                <label id="a">Trình độ</label>&nbsp;&nbsp;&nbsp;
+                <select class="a1">
+                    <option>Chọn trình độ </option>
+                    <option>Đại học</option>
+                    <option>Cao đẳng</option>
+                    <option>Trung cấp</option>
+                </select><br>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <table class="table1">
+                    <tr>
+                        <td></td>
+                        <td style="width: 60px; ">Tốt</td>
+                        <td style="width: 60px;">Khá</td>
+                        <td style="width: 80px;">Trung bình</td>
+                        <td style="width: 60px;">Kém</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: end;">Nghe</td>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: end;">Nói</td>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: end;">Đọc</td>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: end;">Viết</td>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="button">
+                <button id="luu" name="luu" style="background-color: red;font-size: 16px;color: white;">Lưu</button>
+            <button id="ko" name="ko" style="background-color: rgb(161, 154, 154);font-size: 16px;color: white;">Không lưu</button>
+            </div>
+            <hr style="background-color: grey;">
+            <label style="float: left;font-size: 18px;margin-left: 40px;">Tin học văn phòng</label>
+            <div style="display: flex; justify-content: center;">
+                <table class="table2">
+                    <tr>
+                        <td></td>
+                        <td style="width: 80px; ">Tốt</td>
+                        <td style="width: 80px;">Khá</td>
+                        <td style="width: 80px;">Trung bình</td>
+                        <td style="width: 80px;">Kém</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: end;">MS Word</td>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: end;">MS Excel</td>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: end;">MS Power Point</td>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: end;">MS Outlook</td>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                    </tr>
+                </table>
+            </div><br>
+            <div class="pm">
+                <label style="margin-right: 20px;">Phần mềm khác</label><input type="text" id="phanmem" name="phanmem"><br>
+            </div>
+            <hr ><br>
+            <label style="vertical-align: top; margin-right: 20px;">Các thành tích học tập nổi bật khác</label>
+            <textarea id="thanhtich" cols="40" rows="6"></textarea><br><br>
+            <div class="button1">
+                <button id="luu1" name="luu1" style="background-color: red;font-size: 16px;color: white;">Lưu</button>
+            <button id="ko1" name="ko1" style="background-color: rgb(161, 154, 154);font-size: 16px;color: white;">Không lưu</button>
+            </div>
+        </details>
+    </form>
+</body>
+</html>

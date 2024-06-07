@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Danh sách bài hát</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+  }
+  .playlist {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: fit-content;
+  }
+  .listen-all {
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background: #007bff;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .song-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .song {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  .play-button {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('play-icon.png') no-repeat center center;
+    background-size: contain;
+    margin-right: 10px;
+  }
+  .song-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .song-title {
+    font-weight: bold;
+    color: #333;
+  }
+  .song-artist {
+    font-size: 0.85em;
+    color: #666;
+  }
+  img{
+    width: 70px;
+    height: 70px;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  .g{
+    font-size: 30px;
+    width: 30px;
+  }
+</style>
+</head>
+<body>
+<div class="playlist">
+  <div class="listen-all">Nghe tất cả</div>
+  <ol class="song-list">
+    <li class="song">
+      <div class="play-button">1</div>
+      <div class="g">-</div>
+      <div>
+        <img src="https://photo-resize-zmp3.zmdcdn.me/w256_r1x1_png/covers/6/9/69f213a075a1ef6b0b042e242c837178_1489986205.png">
+      </div>
+      <div class="song-info">
+        <div class="song-title">
+          <a href="https://zingmp3.vn/bai-hat/Ngam-Hoa-Le-Roi-Chau-Khai-Phong/ZW7AA97A.html">Ngắm Hoa Lệ Rơi</a>
+        </div>
+        <div class="song-artist">Châu Khải Phong</div>
+      </div>
+    </li>
+    <li class="song">
+      <div class="play-button">2</div>
+      <div class="g">-</div>
+      <div>
+        <img src="https://i.ytimg.com/vi/nHK0u40Ompc/maxresdefault.jpg" alt="">
+      </div>
+      <div class="song-info">
+        <div class="song-title">
+          <a href="https://zingmp3.vn/bai-hat/Co-Gai-M52-HuyR-Tung-Viu/ZW9BID0A.html">Cô Gái M52</a>
+        </div>
+        <div class="song-artist">Huy, Tùng Viu</div>
+      </div>
+    </li>
+    <li class="song">
+      <div class="play-button">3</div>
+      <div class="g">-</div>
+      <div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbxtNKbmkAsBqoT4ESHJ0NhnaWd8qDlHXTSg5HI3IrNw&s" alt="">
+        </div>
+      <div class="song-info">
+        <div class="song-title">
+          <a href="https://zingmp3.vn/bai-hat/Cung-Anh-Ngoc-Dolil-Hagii-STee/ZW9A7W00.html">Cùng Anh</a>
+        </div>
+        <div class="song-artist">Ngọc Dolil, Hagi, STee</div>
+      </div>
+    </li>
+    <li class="song">
+      <div class="play-button">4</div>
+      <div class="g">-</div>
+      <div>
+          <img src="https://photo-zmp3.zadn.vn/thumb_video/4/d/4d8fe94c607efdef1f0f7a348fd83d7a_1515380849.png" alt="">
+        </div>
+      <div class="song-info">
+        <div class="song-title">
+          <a href="https://zingmp3.vn/bai-hat/Nguoi-La-Oi-Karik-Orange-Superbrothers/ZW9A8ACC.html">Người Lạ Ơi</a>
+        </div>
+        <div class="song-artist">Karik, Orange, Superbrothers</div>
+      </div>
+    </li>
+    <li class="song">
+      <div class="play-button">5</div>
+      <div class="g">-</div>
+      <div>
+          <img src="https://avatar-ex-swe.nixcdn.com/playlist/2018/02/03/3/3/e/3/1517658810215_500.jpg" alt="">
+        </div>
+      <div class="song-info">
+        <div class="song-title">
+          <a href="https://zingmp3.vn/bai-hat/Minh-Cuoi-Nhau-Di-Huynh-James-Pjnboys/ZW9AFO8O.html">Mình Cưới Nhau Đi</a>
+        </div>
+        <div class="song-artist">Huỳnh James, Pjnboys</div>
+      </div>
+    </li>
+    <li class="song">
+      <div class="play-button">6</div>
+      <div class="g">-</div>
+      <div>
+          <img src="https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/9/c/9c2cfa5cbfeae42275cad35bc50790e9_1513848418.jpg" alt="">
+        </div>
+      <div class="song-info">
+        <div class="song-title">
+          <a href="https://zingmp3.vn/bai-hat/Buon-Cua-Anh-K-ICM-Dat-G-Masew/ZW8WD9BE.html">Buồn Của Anh</a>
+        </div>
+        <div class="song-artist">K-ICM, Đạt G, Masew</div>
+      </div>
+    </li>
+  </ol>
+</div>
+</body>
+</html>
